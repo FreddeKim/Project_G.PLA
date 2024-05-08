@@ -1,14 +1,20 @@
 header > div > nav > ul > li > a,
 header > div > div,
 header > div > div > div > button > span,
-header > div > div > div > div > form > div > input{
+header > div > div > div > div > form > div > input,
+div:first-of-type > div > ul > li > div > a,
+section:first-of-type > ul > li > div:last-of-type > a > div > span{
     font-family: 'Raleway';
 }
 
-header > div > div > div > div > form > div > input[type="search"]{
+header > div > div > div > div > form > div > input[type="search"],
+section:first-of-type > ul > li > div:last-of-type > a > h3,
+section:first-of-type > ul > li > div:last-of-type > a > span{
     font-family: "Noto Sans KR", sans-serif;
 }
-
+section:first-of-type > h2{
+    font-family: "Kanit";
+}
 
 
 
@@ -71,11 +77,12 @@ span{
     }
     header > div > nav > ul > li > a{
         color: #161c2d;
-        font-size: 20px;
+        font-size: clamp(16px, 1.1vw, 20px);
         font-weight: 700;
         padding: 55px 25px;
         text-align: center;
         transition: color 0.2s ease-in-out;
+        line-height: 20px   ;
         
     }
     header > div > nav > ul > li::after{
@@ -96,7 +103,7 @@ span{
     }
     header > div > div{
         display: flex;
-        padding-top: 20px;
+        padding-top: 10px;
         position: relative;
         width: 25%;
         justify-content: space-between;
@@ -106,7 +113,7 @@ span{
     }
     header > div > div > div > button > span,
     header > div > div > div > a{
-        font-size: 18px;
+        font-size: clamp(14px, 1vw, 18px);
         font-weight: 700;
         color: #161c2d;
         text-align: center;

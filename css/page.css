@@ -1,0 +1,203 @@
+
+
+
+
+@media screen and (min-width: 1280px){
+
+    body > div:first-of-type > div{
+        position: relative;
+        overflow: hidden;
+    }
+    body > div:first-of-type > div > div{
+        position: absolute;
+        cursor: pointer;
+    }
+    body > div:first-of-type > div > div:first-of-type{
+        left: 0;
+        top: 40%;
+        z-index: 1000;
+        margin-left: 15px;
+    }
+    body > div:first-of-type > div > div:last-of-type{
+        right: 0;
+        top: 40%;
+        z-index: 1000;
+        margin-right: 15px;
+    }
+    /* body > div:first-of-type > div > ul::after{
+        display: block;
+        content: '';
+        clear: both;
+    } */
+    body > div:first-of-type > div > ul{
+        /* width: 500vw; */
+        transition: transform 0.3s;
+        position: relative;
+        height: 50em;
+    }
+    body > div:first-of-type > div > ul > li{
+        /* float: left; */
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    body > div:first-of-type > div > ul > li:first-child{
+        background: url('../images/section01_zeta.png')50% 10% / cover no-repeat;
+        z-index: 10;
+    }
+    body > div:first-of-type > div > ul > li:nth-child(2){
+        background: url('../images/gundamseed_bg.png')50% 20% / cover no-repeat;
+        z-index: 9;
+    }
+    body > div:first-of-type > div > ul > li:nth-child(3){
+        background: url('../images/chars_counterattack_bg.png')20% 20% / cover no-repeat;
+        z-index: 8;
+    }
+    body > div:first-of-type > div > ul > li:nth-child(4){
+        background: url('../images/witch_from_mercuryBG.png')20% 20% / cover no-repeat;
+        z-index: 7;
+    }
+    body > div:first-of-type > div > ul > li:nth-child(5){
+        background: url('../images/hathawaybg.png')20% 10% / cover no-repeat;
+        z-index: 6;
+    }
+
+
+    body > div:first-of-type > div > ul > li > div{
+        /* padding: 150px 7.81% 0px; */
+        margin-left: 7.82%;
+        margin-top: 170px;
+        width: 600px;
+        position: relative;
+        height: 500px;
+    }
+    body > div:first-of-type > div > ul > li > div > img{
+        width: 100%;
+    }
+    body > div:first-of-type > div > ul > li:nth-child(4) > div > img{
+        margin-top: 150px;
+    }
+    /* body > div:first-of-type > div > ul > li > div > img{
+        margin-bottom: 150px;
+    } */
+    /* body > div:first-of-type > div > ul > li:nth-child(2) > div > img:first-of-type{
+        margin: 0;
+    }
+    body > div:first-of-type > div > ul > li:nth-child(2) > div > img:last-of-type{
+        margin-bottom: 60px;
+    } */
+    body > div:first-of-type > div > ul > li > div > a{
+        background-color: #f3f5f6;
+        width: 300px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #161c2d;
+        text-align: center;
+        padding: 25px 0;
+        border-radius: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        position: absolute;
+        bottom: 0;
+        left: 27.5%;
+    }
+    body > div:first-of-type > div > ul > li > div > a:hover{
+        background-color: #161c2d;
+        color: #26ff92;
+        border: 1px solid #26ff92;
+        box-sizing: border-box;
+        width: 299px;
+        padding: 24px 0;
+    }
+
+
+    section:first-of-type > h2{
+        text-align: center;
+        margin: 100px 0;
+        font-size: 80px;
+        font-weight: 700;
+        font-style: italic;
+    }
+    section:first-of-type > ul::after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+    section:first-of-type > ul > li{
+        width: 50%;
+        float: left;
+        position: relative;
+        display: block;
+    }
+
+    section:first-of-type > ul > li:first-child > div:first-of-type,
+    section:first-of-type > ul > li:nth-child(2) > div:first-of-type{
+        padding: 35.95% 0;
+        text-indent: -9999px;
+
+
+    }
+    section:first-of-type > ul > li:first-child > div:last-of-type,
+    section:first-of-type > ul > li:nth-child(2) > div:last-of-type{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(22, 28,45, 0.6);
+        height: 100%;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    }
+    section:first-of-type > ul > li:first-child:hover > div:last-of-type,
+    section:first-of-type > ul > li:nth-child(2):hover > div:last-of-type{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    section:first-of-type > ul > li > div:last-of-type > a > h3{
+        color: #f3f5f6;
+        font-size: clamp(16px, 2vw, 20px);
+        margin-bottom: 30px;
+    }
+    section:first-of-type > ul > li:first-child > div:last-of-type > a > h3,
+    section:first-of-type > ul > li:nth-child(2) > div:last-of-type > a > h3{
+        font-size: clamp(24px, 2vw, 30px);
+    }
+    section:first-of-type > ul > li > div:last-of-type > a > div{
+        background-color: #161c2d;
+        width: 150px;
+        margin: 0 auto 30px;
+        padding: 20px 0;
+    }
+    section:first-of-type > ul > li > div:last-of-type > a > div > span{
+        font-size: 18px;
+        color: #26ff92;
+        font-weight: 700;
+        text-align: center;
+    }
+    section:first-of-type > ul > li > div:last-of-type > a > span{
+        font-size: clamp(16px, 2vw, 20px);
+        color: #f3f5f6
+    }
+    section:first-of-type > ul > li:first-child > div:last-of-type > a > span,
+    section:first-of-type > ul > li:nth-child(2) > div:last-of-type > a > span{
+        font-size: clamp(24px, 2vw, 30px);
+    }
+
+
+    section:first-of-type > ul > li:first-child > div:first-of-type{
+        background: url('../images/nu_gundam_verka.jpg')left 20% / cover no-repeat;
+    
+    }
+    section:first-of-type > ul > li:nth-child(2) > div:first-of-type{
+        background: url('../images/hguc238.jpg')left 20% / cover no-repeat;
+    }
+}
