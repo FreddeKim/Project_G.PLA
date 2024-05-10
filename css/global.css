@@ -3,16 +3,24 @@ header > div > div,
 header > div > div > div > button > span,
 header > div > div > div > div > form > div > input,
 div:first-of-type > div > ul > li > div > a,
-section:first-of-type > ul > li > div:last-of-type > a > div > span{
+section:first-of-type > ul > li > div:last-of-type > a > div > span,
+section:nth-of-type(3) > ul > li > a > figure > figcaption > dl > dd:first-of-type,
+footer > div > div > ul{
     font-family: 'Raleway';
 }
 
 header > div > div > div > div > form > div > input[type="search"],
 section:first-of-type > ul > li > div:last-of-type > a > h3,
-section:first-of-type > ul > li > div:last-of-type > a > span{
+section:first-of-type > ul > li > div:last-of-type > a > span,
+section:nth-of-type(3) > ul > li > a > figure > figcaption > dl > dt,
+section:nth-of-type(3) > ul > li > a > figure > figcaption > dl > dd:last-of-type,
+body > div:nth-of-type(2) > div > a,
+footer > div > div > div{
     font-family: "Noto Sans KR", sans-serif;
 }
-section:first-of-type > h2{
+section:first-of-type > h2,
+section:nth-of-type(2) > a > h2,
+section:nth-of-type(3) > h2{
     font-family: "Kanit";
 }
 
@@ -198,6 +206,7 @@ span{
         position: fixed;
         right: 4%;
         bottom: 5%;
+        z-index: 10000;
     }
     .carticon > span{
         text-indent: -9999px;
@@ -210,5 +219,55 @@ span{
     }
     .carticon:hover > span{
         background: url('../images/cart_hover.png')center center no-repeat;
+    }
+
+
+    footer{
+        background-color: #f3f5f6;
+        padding: 80px 0;
+    }
+    footer > div{
+        max-width: 1620px;
+        margin: 0 auto;
+        display: flex;
+        
+    }
+    footer > div > h2{
+        width: 8.64%;
+        margin-right: 3.08%;
+    }
+    footer > div > h2 > a > img{
+        width: 100%;
+    }
+    footer > div > div{
+        width: 88.27%;
+    }
+    footer > div > div > ul{
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+        
+    }
+    footer > div > div > ul > li{
+        display: block;
+    }
+    footer > div > div > ul > li > a{
+        color: #161c2d;
+        font-weight: 700;
+    }
+    footer > div > div > ul > li:hover > a{
+        color: #26ff92;
+    }
+    footer > div > div > ul > li:not(:first-child){
+        margin-left: 8.64%;
+    }
+    footer > div > div > div{
+        color: #161c2d;
+        font-weight: 600;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    footer > div > div > div > address{
+        font-style: normal;
     }
 }
