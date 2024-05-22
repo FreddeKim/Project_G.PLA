@@ -2,6 +2,7 @@
 $(document).ready(function(){
     searchbar();
     slider();
+    changeDisplay();
 });
 
 
@@ -56,4 +57,17 @@ function slider() {
         sliderNext();
     });
     setInterval(sliderNext , sliderInterval);
-}
+};
+
+function changeDisplay(){
+    $(".muibtn").click(function(){
+        $("header > div:last-of-type > nav").toggleClass('menubar');
+        $('header > div > div > div > div').removeClass('searchbar');
+    });
+    $(".muibtn").click(function(){
+        $(".muibtn").toggleClass('muibtnclose');
+    });
+    $("header > div:last-of-type > div > div > button").click(function(){
+        $("header > div:last-of-type > nav").removeClass('menubar');
+    })
+};

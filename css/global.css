@@ -38,62 +38,67 @@ span{
 
 
 
-
-
 @media screen and (min-width: 1280px){
 
     header{
         background-color: #f3f5f6;
         padding: 0 2.6%;
         display: flex;
+
         
     }
-    header > h1{
-        width: 7.29%;
-        margin:20px 3.9% 20px 0;
+    header > div:first-of-type{
         display: flex;
-        
+        margin:20px;
+        width: 8%;
     }
-    header > h1 > a{
-        align-self: center;
-    }
-    header > h1 > a > img{
+    header > div:first-of-type > h1{
         width: 100%;
+        display: flex;
+        align-items: center;
     }
-    header > input{
+    header > div:first-of-type > h1 > a > img{
+        width: 100%;
+        display: block;
+    }
+   header > div:first-of-type input{
         display: none;
     }
-    header > div{
+    header > div:last-of-type{
         display: flex;
         justify-content: space-between;
-        width: 88.91%;
+        width: 92%;
     }
-    header > div > nav{
-        width: 60%;
+    header > div:last-of-type > nav{
+        width: 70%;
     }
-    header > div > nav > ul{
+    header > div:last-of-type > nav > ul{
         display: flex;
         width: 100%;
         
         
     }
-    header > div > nav > ul > li{
+    header > div:last-of-type > nav > ul > li{
         display: block;
         flex-grow: 1;
         position: relative;
-        align-self: center;
+       
     }
-    header > div > nav > ul > li > a{
+    header > div:last-of-type > nav > ul > li > a{
         color: #161c2d;
         font-size: clamp(16px, 1.1vw, 20px);
         font-weight: 700;
-        padding: 55px 25px;
+        padding: 50px 25px;
+        min-height: 45px;
         text-align: center;
         transition: color 0.2s ease-in-out;
-        line-height: 20px   ;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
-    header > div > nav > ul > li::after{
+    header > div:last-of-type > nav > ul > li::after{
         border-bottom: 5px solid #26ff92;
         content: '';
         display: block;
@@ -103,68 +108,73 @@ span{
         left: 0;
         bottom: 0;
     }
-    header > div > nav > ul > li:hover::after{
+    header > div:last-of-type > nav > ul > li:hover::after{
         width: 100%;
     }
-    header > div > nav > ul > li:hover > a{
+    header > div:last-of-type > nav > ul > li:hover > a{
         color: #26ff92;
     }
-    header > div > div{
+    header > div:last-of-type > div{
         display: flex;
         padding-top: 10px;
-        position: relative;
+        /* position: relative; */
         width: 25%;
         justify-content: space-between;
     }
-    header > div > div > div{
+    header > div:last-of-type > div > div{
         align-self: center;
     }
-    header > div > div > div > button > span,
-    header > div > div > div > a{
+    header > div:last-of-type > div > div > button > span,
+    header > div:last-of-type > div > div > a{
         font-size: clamp(14px, 1vw, 18px);
         font-weight: 700;
         color: #161c2d;
         text-align: center;
     }
-    header > div > div > div > a,
-    header > div > div > div > button{
+    header > div:last-of-type > div > div > a,
+    header > div:last-of-type > div > div > button{
         padding-top: 65px;
     }
-    header > div > div > div > button{
+    header > div:last-of-type > div > div > button{
         border: none;
         display: block;
         background: url('../images/haro_search.png')center top no-repeat;
     }
-    header > div > div > div:nth-child(2) > a{
+    header > div:last-of-type > div > div:nth-child(2) > a{
         background: url('../images/signin_icon.png')center top no-repeat;
     }
-    header > div > div > div:nth-child(2) > a:hover{
+    header > div:last-of-type > div > div:nth-child(2) > a:hover{
         background: url('../images/signin_hover.png')center top no-repeat
     }
-    header > div > div > div:last-child > a{
+    header > div:last-of-type > div > div:last-child > a{
         background: url('../images/myaccount.png')center top no-repeat;
     }
-    header > div > div > div:last-child > a:hover{
+    header > div:last-of-type > div > div:last-child > a:hover{
         background: url('../images/myaccoun_hover.png')center top no-repeat;
     }
 
 
-    header > div > div > div > div{
+    header > div:last-of-type > div > div > div{
         position: absolute;
-        left: -73.4%;
-        bottom: -65px;
+        right: 0;
+        top: 140px;
         background-color: #f3f5f6;
-        width: 180%;
+        width: 30%;
         padding: 10px;
         display: none;
+        z-index: 1000;
     }
-    header > div > div > div > div.searchbar{
+    header > div:last-of-type > div > div > div.searchbar{
         display: block;
     }
-    header > div > div > div > div > form > div > input{
+    header > div:last-of-type > div > div > div > form > div{
+        display: flex;
+        align-items: center;
+    }
+    header > div:last-of-type > div > div > div > form > div > input{
         float: left;
     }
-    header > div > div > div > div > form > div > input[type="search"]{
+    header > div:last-of-type > div > div > div > form > div > input[type="search"]{
         width: 50%;
         border: 1px solid #161c2d;
         padding: 10px;
@@ -172,29 +182,33 @@ span{
         font-size: 20px;
         
     }
-    header > div > div > div > div > form > div > input[type="submit"]{
+    header > div:last-of-type > div > div > div > form > div > input[type="submit"]{
         border: 1px solid #161c2d;
         background-color: #ffffff;
         color: #161c2d;
-        font-size: 20px;
+        font-size: 1.1vw;
         padding: 10px;
         font-weight: 700;
         box-sizing: border-box;
         margin-right: 10px;
+        width: 20%;
+        display: block;
         
     }
-    header > div > div > div > div > form > div > input[type="button"]{
+    header > div:last-of-type > div > div > div > form > div > input[type="button"]{
         border: 1px solid #161c2d;
         background-color: #ffffff;
         color: #161c2d;
-        font-size: 20px;
+        font-size: 1.1vw;
         padding: 10px;
         font-weight: 700;
         box-sizing: border-box;
+        width: 20%;
+        display: block;
         
     }
-    header > div > div > div > div > form > div > input[type="submit"]:hover,
-    header > div > div > div > div > form > div > input[type="button"]:hover{
+    header > div:last-of-type > div > div > div > form > div > input[type="submit"]:hover,
+    header > div:last-of-type > div > div > div > form > div > input[type="button"]:hover{
         background-color: #161c2d;
         color: #26ff92;
     }
@@ -271,3 +285,284 @@ span{
         font-style: normal;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1279px){
+
+    header{
+        background-color: #f3f5f6;
+        padding: 0 24px;
+        display: flex;
+        position: relative;
+
+        
+    }
+    header > div:first-of-type{
+        display: flex;
+        margin: 20px;
+        width: 60%;
+        justify-content: space-between;
+        
+    }
+    header > div:first-of-type > h1{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    header > div:first-of-type > h1 > a > img{
+        width: 80%;
+        display: block;
+        max-height: 150px;
+    }
+   header > div:first-of-type > .muibtn{
+        display: block;
+        background: url('../images/menu.png')left top / 100% no-repeat;
+        width: 50px;
+        height: 50px;
+        text-indent: -9999px;
+        border: none;
+        align-self: center;
+    }
+    header > div:first-of-type > .muibtn.muibtn:active{
+        background: url('../images/menu_hover.png')left top / 100% no-repeat;
+    }
+    header > div:first-of-type > .muibtnclose{
+        background: url('../images/close_btn.png')left top / 100% no-repeat;
+    }
+
+    header > div:last-of-type{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+    header > div:last-of-type > nav{
+        width: 100%;
+        position:absolute;
+        left: 0;
+        top: 100%;
+        z-index: 10000;
+        background-color: #f3f5f6;
+        display: none;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+    header > div:last-of-type > nav.menubar{
+        display: block;
+    }
+    header > div:last-of-type > nav > ul{
+        display: flex;
+        width: 100%;
+        
+        
+    }
+    header > div:last-of-type > nav > ul > li{
+        display: block;
+        flex-grow: 1;
+        position: relative;
+       
+    }
+    header > div:last-of-type > nav > ul > li > a{
+        color: #161c2d;
+        font-size: clamp(16px, 1.1vw, 20px);
+        font-weight: 700;
+        padding: 25px;
+        min-height: 45px;
+        text-align: center;
+        transition: color 0.2s ease-in-out;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    header > div:last-of-type > nav > ul > li::after{
+        border-bottom: 5px solid #26ff92;
+        content: '';
+        display: block;
+        width: 0%;
+        transition: width 0.3s ease-in-out;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    header > div:last-of-type > nav > ul > li:hover::after{
+        width: 100%;
+    }
+    header > div:last-of-type > nav > ul > li:hover > a{
+        color: #26ff92;
+    }
+    header > div:last-of-type > div{
+        display: flex;
+        padding-top: 10px;
+        /* position: relative; */
+        width: 100%;
+        justify-content: space-around;
+    }
+    header > div:last-of-type > div > div{
+        align-self: center;
+    }
+    header > div:last-of-type > div > div > button > span,
+    header > div:last-of-type > div > div > a{
+        font-size: clamp(14px, 1vw, 18px);
+        font-weight: 700;
+        color: #161c2d;
+        text-align: center;
+    }
+    header > div:last-of-type > div > div > a,
+    header > div:last-of-type > div > div > button{
+        padding-top: 65px;
+    }
+    header > div:last-of-type > div > div > button{
+        border: none;
+        display: block;
+        background: url('../images/haro_search.png')center top no-repeat;
+    }
+    header > div:last-of-type > div > div:nth-child(2) > a{
+        background: url('../images/signin_icon.png')center top no-repeat;
+    }
+    header > div:last-of-type > div > div:nth-child(2) > a:hover{
+        background: url('../images/signin_hover.png')center top no-repeat
+    }
+    header > div:last-of-type > div > div:last-child > a{
+        background: url('../images/myaccount.png')center top no-repeat;
+    }
+    header > div:last-of-type > div > div:last-child > a:hover{
+        background: url('../images/myaccoun_hover.png')center top no-repeat;
+    }
+
+
+    header > div:last-of-type > div > div > div{
+        position: absolute;
+        right: 0;
+        bottom: -71px;
+        background-color: #f3f5f6;
+        width: 50%;
+        padding: 10px;
+        display: none;
+        z-index: 10000;
+    }
+    header > div:last-of-type > div > div > div.searchbar{
+        display: block;
+    }
+    header > div:last-of-type > div > div > div > form > div{
+        display: flex;
+        align-items: center;
+    }
+    header > div:last-of-type > div > div > div > form > div > input{
+        float: left;
+    }
+    header > div:last-of-type > div > div > div > form > div > input[type="search"]{
+        width: 50%;
+        border: 1px solid #161c2d;
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        
+    }
+    header > div:last-of-type > div > div > div > form > div > input[type="submit"]{
+        border: 1px solid #161c2d;
+        background-color: #ffffff;
+        color: #161c2d;
+        font-size: 1.1vw;
+        padding: 10px;
+        font-weight: 700;
+        box-sizing: border-box;
+        margin-right: 10px;
+        width: 20%;
+        display: block;
+        
+    }
+    header > div:last-of-type > div > div > div > form > div > input[type="button"]{
+        border: 1px solid #161c2d;
+        background-color: #ffffff;
+        color: #161c2d;
+        font-size: 1.1vw;
+        padding: 10px;
+        font-weight: 700;
+        box-sizing: border-box;
+        width: 20%;
+        display: block;
+        
+    }
+    header > div:last-of-type > div > div > div > form > div > input[type="submit"]:hover,
+    header > div:last-of-type > div > div > div > form > div > input[type="button"]:hover{
+        background-color: #161c2d;
+        color: #26ff92;
+    }
+    .carticon{
+        width: 90px;
+        height: 90px;
+        background-color:#f3f5f6 ;
+        border-radius: 50%;
+        position: fixed;
+        right: 4%;
+        bottom: 5%;
+        z-index: 10000;
+    }
+    .carticon > span{
+        text-indent: -9999px;
+        background: url('../images/cart.png')center center no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .carticon:hover{
+        background-color: #161c2d;
+    }
+    .carticon:hover > span{
+        background: url('../images/cart_hover.png')center center no-repeat;
+    }
+
+
+    footer{
+        background-color: #f3f5f6;
+        padding: 40px 24px;
+    }
+    footer > div{
+        /* max-width: 1620px;
+        margin: 0 auto; */
+        display: flex;
+        
+    }
+    footer > div > h2{
+        width: 10.64%;
+        margin-right: 3.08%;
+    }
+    footer > div > h2 > a > img{
+        width: 100%;
+    }
+    footer > div > div{
+        width: 86.27%;
+    }
+    footer > div > div > ul{
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+        
+    }
+    footer > div > div > ul > li{
+        display: block;
+        align-self: center;
+        
+    }
+    footer > div > div > ul > li > a{
+        color: #161c2d;
+        font-weight: 700;
+        line-height: 18px;
+        font-size: 14px;
+    }
+    footer > div > div > ul > li:hover > a{
+        color: #26ff92;
+    }
+    footer > div > div > ul > li:not(:first-child){
+        margin-left: 8.64%;
+    }
+    footer > div > div > div{
+        color: #161c2d;
+        font-weight: 600;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    footer > div > div > div > address{
+        font-style: normal;
+    }
+}
+
+
