@@ -3,6 +3,7 @@ $(document).ready(function(){
     searchbar();
     slider();
     changeDisplay();
+    fadeIn();
 });
 
 
@@ -70,4 +71,18 @@ function changeDisplay(){
     $("header > div:last-of-type > div > div > button").click(function(){
         $("header > div:last-of-type > nav").removeClass('menubar');
     })
+};
+
+
+function fadeIn(){
+    $(window).on('scroll', function(){
+        var windowHeight = $(window).height();
+        var scrollTop = $(window).scrollTop();
+        $('section').each(function(){
+            var position = $(this).offset().top;
+            if(position < (windowHeight + scrollTop)){
+                $(this).addClass('active');
+            }
+        });
+    }).scroll();
 };
