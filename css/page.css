@@ -439,7 +439,7 @@
         /* width: 500vw; */
         transition: transform 0.3s;
         position: relative;
-        height: 30em;
+        height: 40em;
     }
     body > div:first-of-type > div > ul > li{
         /* float: left; */
@@ -475,10 +475,10 @@
         /* padding: 150px 7.81% 0px; */
         /* margin-left: 7.82%; */
         /* margin-top: 170px; */
-        margin: 100px 0 0 11%;
+        margin: 150px 0 0 11%;
         width: 300px;
         position: relative;
-        height: 330px;
+        height: 350px;
     }
     body > div:first-of-type > div > ul > li > div > img{
         width: 100%;
@@ -520,7 +520,14 @@
         width: 300px;
         padding: 14px 0;
     }
-
+    section{
+        opacity: 0;
+        transition: opacity 1.5s ease; /* 페이드 효과를 위한 트랜지션 추가 */
+    }
+    
+    section.active {
+        opacity: 1;
+    }
 
     section:first-of-type > h2{
         text-align: center;
@@ -659,8 +666,9 @@
     section:first-of-type > ul > li > div:last-child{
         text-align: center;
         width: 100%;
-        padding: 30px;
+        padding: 50px 30px;
         box-sizing: border-box;
+        min-height: 200px;
     }
     section:first-of-type > ul > li > div:last-child > a{
         display: flex;
